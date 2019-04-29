@@ -1,13 +1,8 @@
 import { app } from 'hyperapp'
-// import logger from '@hyperapp/logger'
 
-// import actions from './actions'
-// import state from './state'
-// import view from './components/views/UseOfInputActions'
-
-import actions_01 from './exercise/actions'
-import state_01 from './exercise/state'
-import view_01 from './exercise/components/views/taskForceOverview'
+import actions from './actions'
+import state from './state'
+import view from './components/views/UseOfInputActions'
 
 /*
 RAPPEL :
@@ -30,8 +25,8 @@ Une application hyperapp prend 4 paramètres:
  */
 
 app(
-  state_01,
-  actions_01,
-  view_01,
+  state,
+  actions,
+  view,
   document.body
 )
