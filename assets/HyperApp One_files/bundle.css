@@ -51,6 +51,10 @@ table {
 /* =============================================== */
 
 
+* {
+  border: 2px solid black ;
+}
+
 header {
   
 }
@@ -76,14 +80,9 @@ img {
     width: 6em
 }
 
-h1, h2, h3 {
-  font-family: Arial;
-}
-
 h1 {
   text-align: center;
   padding-bottom: 10px;
-  font-size: 2em;
 }
 
 nav ul{
@@ -99,11 +98,11 @@ li a{
 
 
 li{
-  display: inline-block;
-  background-color: lightgray;
-  width: 20%;
+  display: inline;
+  background-color: indianred;
+  border-radius: 10px;
+  padding: 5px;
   z-index: -1;
-  border-radius: 5px 5px 0px 0px
 }
 
 li a:hover {
@@ -111,55 +110,19 @@ li a:hover {
 }
 
 main {
-  background-color: #F5F5F5;
+
 }
 
-.dashboard {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  max-width: 60vw;
-  margin: auto;
+#charts1{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
 }
 
-.active {
-  background-color: #F5F5F5;
+#charts2{
+      display: flex;
+    flex-direction: column;
+    padding: 50px;
 }
 
-.chart{
-  background-color: white;
-  margin: 3px;
-}
-
-.box {
-  width: 100%;
-}
-
-.chart-group .box {
-  width:50%;
-}
-
-.chart-group {
-  width:100%;
-}
-
-.chart-lg {
-  width:96%;
-}
-
-h2 {
-  text-align: center;
-  font-size: 2em;
-}
-
-h3 {
-  margin-top:20px;
-  margin-bottom:5px;
-  text-align: center;
-  font-size: 1.5em;
-  width: 100%;
-}
-
-.info {
-  text-align: center;
-}
+/*# sourceMappingURL=bundle.css.map*/

@@ -5,9 +5,13 @@ export default {
   },
   exampleSet: value => state => ({...state, input: {...state.input, value}}),
 
-  test: (value) => state => {
-    console.log(value.name, value.event)
+  test: () => state => {
+    alert('Click')
     return state
+  },
+
+  changeMenu: value => state => {
+    return {...state, category: value}
   },
 
   updateValue: value => state => {
