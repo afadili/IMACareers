@@ -24,7 +24,6 @@ function VerticalBarChart (props) {
           ]
         },
         options: {
-          legend: { display: false },
           title: {
             display: true,
             text: title
@@ -46,12 +45,14 @@ function ChooseOptions (type) {
             min: 0
           }
         }]
-      }
+      },
+      legend: { display: false }
     }
   } else if (type === 'doughnut' || type === 'pie') {
     return {
       circumference: 1 * Math.PI,
-      rotation: 1 * Math.PI
+      rotation: 1 * Math.PI,
+      legend: { display: true }
     }
   } else if (type === 'bar') {
     return {
@@ -62,10 +63,11 @@ function ChooseOptions (type) {
             min: 0
           }
         }]
-      }
+      },
+      legend: { display: false }
     }
   } else {
-    return {}
+    return { }
   }
 }
 

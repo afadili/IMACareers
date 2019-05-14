@@ -16,10 +16,12 @@ export default (props) => {
           {ChartComponent({title: 'Statut lors du premier emploi', info: props.work.statut, type: 'doughnut'})}
           {ChartComponent({title: 'Domaine du premier emploi', info: props.work.fields, type: 'horizontalBar'})}
           {ChartComponent({title: 'Taille de l\'entreprise', info: props.work.type, type: 'horizontalBar'})}
-          {ChartComponent({title: 'Les entreprises préférées des IMAC', info: props.work.companies, type: 'horizontalBar'})}
+          {ChartComponent({title: 'Les entreprises préférées des IMAC', info: props.work.companies, type: 'bar'})}
         </div>
         <h3>Retour à IMAC</h3>
-        {ChartComponent({title: 'Etudiants revenus enseigner à l\'IMAC ?', info: props.teacher, type: 'doughnut'})}
+        <div className = 'dashboard chart-group'>
+          {ChartComponent({title: 'Etudiants revenus enseigner à l\'IMAC ?', info: props.teacher, type: 'doughnut'})}
+        </div>
       </div>
     </main>
   )
