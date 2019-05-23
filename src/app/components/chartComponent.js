@@ -26,7 +26,13 @@ function VerticalBarChart (props) {
         options: {
           title: {
             display: true,
-            text: title
+            text: title,
+            fontColor: 'white'
+          },
+          scales: {
+            labels: {
+              fontColor: 'white'
+            }
           },
           ...options
         }
@@ -50,9 +56,17 @@ function ChooseOptions (type) {
     }
   } else if (type === 'doughnut' || type === 'pie') {
     return {
-      circumference: 1 * Math.PI,
-      rotation: 1 * Math.PI,
-      legend: { display: true }
+      legend: {
+        display: true,
+        labels: {
+          fontColor: 'white'
+        }
+      },
+      elements: {
+        arc: {
+          borderWidth: 0
+        }
+      }
     }
   } else if (type === 'bar') {
     return {

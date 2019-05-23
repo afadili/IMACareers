@@ -50,13 +50,15 @@ table {
 
 /* =============================================== */
 
-
+p, h2, h3, h4 {
+  font-family: Arial;
+}
 header {
   
 }
 
 .turquoise {
-  background-color: turquoise;
+  background-color: darkgray;
 }
 
 .cyan {
@@ -93,7 +95,7 @@ nav ul{
   text-align: center; /* centrer le texte */
 }
 
-li a{
+li a {
   color: black;
 }
 
@@ -107,11 +109,12 @@ li{
 }
 
 li a:hover {
-  background-color: white;
+  background-color: black;
 }
 
 main {
-  background-color: #F5F5F5;
+  background-color: black;
+  color: white;
 }
 
 .dashboard {
@@ -123,11 +126,11 @@ main {
 }
 
 .active {
-  background-color: #F5F5F5;
+  background-color: black;
 }
 
 .chart{
-  background-color: white;
+  background-color: #303030;
   margin: 3px;
   border-radius: 5px;
 }
@@ -160,6 +163,8 @@ main {
 h2 {
   text-align: center;
   font-size: 2em;
+  padding-bottom: 10px;
+  padding-top: 15px;
 }
 
 h3 {
@@ -185,5 +190,48 @@ h3 {
   align-self: stretch;
 }
 
-#mapid { height: 300px;
+#mapid { height: 400px;
 width: 100% }
+
+.texte{
+  height: 97%;
+}
+
+.info-box .texte p {
+  font-size: 13px;
+  line-height: 15px;
+}
+
+.box .texte {
+  line-height: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 2px;
+}
+
+.box .texte h4{
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.intro .texte{
+  font-size: 20px;
+  text-align: center;
+  padding: 5px;
+}
+
+.texte h4 {
+  color:turquoise;
+}
+
+
+.alumni p{
+  padding-top: 20px;
+}
+
+.alumni h4{
+  padding-top: 20px;
+}
+.alumni p{
+    line-height: 30px;
+}

@@ -205,5 +205,48 @@ export default {
     }
   ],
 
+  countries: [
+    {
+      label: 'Royaume-uni',
+      value: [51.5, -0.09]
+    },
+    {
+      label: 'France',
+      value: [48.9, 2.469]
+    },
+    {
+      label: 'C',
+      value: [21, 39]
+    },
+    {
+      label: 'Maroc',
+      value: [33, -7]
+    },
+    {
+      label: 'E',
+      value: [38, -77]
+    },
+    {
+      label: 'F',
+      value: [38, -80]
+    },
+    {
+      label: 'G',
+      value: [40, -113]
+    },
+    {
+      label: 'H',
+      value: [26, 127]
+    },
+    {
+      label: 'I',
+      value: [35, 139]
+    },
+    {
+      label: 'J',
+      value: [43, -79]
+    }
+  ],
+
   category: true
 }
